@@ -255,4 +255,129 @@ a:hover {
   background-color: #ff5c8d;
 }
 
+/* Estilos para el footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+    padding: 2.5rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.contenido_pie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    gap: 2rem;
+}
+
+.seccion_pie, .rapidos {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1.5rem;
+}
+
+.seccion_pie h3, .rapidos h3 {
+    color: #3498db;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.seccion_pie h3::after, .rapidos h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+}
+
+.contacto_pie, .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacto_pie li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contacto_pie li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+}
+
+.links li {
+    margin-bottom: 0.6rem;
+}
+
+.links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.links a:hover {
+    color: #3498db;
+    transform: translateX(5px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+
+.copyright p:first-child {
+    margin-bottom: 1rem;
+    color: #bdc3c7;
+}
+
+.copyright ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+.copyright li {
+    display: inline-block;
+    color: #95a5a6;
+    font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido_pie {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .seccion_pie h3::after, .rapidos h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
