@@ -1,0 +1,47 @@
+
+  .acerca {
+    padding: 40px;
+    background-color: #363232;
+  }
+
+  .contenedor-acerca {
+    display: flex; /* Aquí usamos Flexbox */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+  }
+
+  .texto-acerca {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .texto-acerca h2 {
+    font-size: 2em;
+       font-family: 'Poppins', sans-serif;
+    color: #f8f8f8;
+    margin-bottom: 10px;
+  }
+
+  .texto-acerca p {
+    font-size: 1.1em;
+      font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+
+  .imagen-acerca {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  .imagen-acerca img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
