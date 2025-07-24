@@ -1,0 +1,15 @@
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+    padding: 2rem 0 0;
+    font-size: 0.9rem;
+}
+
+.contenido_pie {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem 2rem;
+}
